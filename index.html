@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Css/index.css" />
+    <title>Weed Karma</title>
+  </head>
+  <body>
+    <!-- ------header start------- -->
+    <header>
+      <section class="new_product__wrraper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 text-center  pt-2 pb-2">
+              <span class="new_product text-center">NEW PRODUCT ALERT</span>
+              <img
+                class="usa float-right img-fluid"
+                src="./img/usa.png"
+                alt="California"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav
+        class="navbar navbar-light  navbar-expand-xl header_navbar__wrraper justify-content-between"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".dual-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" class="ml-auto d-block text-center d-xl-none logo w-25 ">
+            <img class="img-fluid" src="./img/log_new.svg" alt="logo" />
+          </a>
+          <div class="w-50  accaunt d-flex justify-content-end d-xl-none ">
+            <a class="navbar-brand text-center" href="#">
+              <i class="fab fa-facebook-messenger"></i>
+            </a>
+            <a class="navbar-brand text-center" href="#">
+              <i class="fas fa-briefcase"></i>
+            </a>
+            <a class="navbar-brand text-center" href="#">
+              <i class="fas fa-user-circle"></i>
+            </a>
+          </div>
+          <div
+            class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> Weeds </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> Seeds </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> Edibles </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> Oils </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> CBD </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> Pre Rolls </a>
+              </li>
+              <li class="nav-item">
+                <a class="ml-3 weed_type" href="#"> Hash </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class=" ml-auto d-xl-block text-center d-none logo w-25">
+            <img class=" img-fluid" src="./img/log_new.svg" alt="Logo" />
+          </a>
+          <div class="w-50 accaunt d-xl-flex justify-content-end d-none">
+            <a class="navbar-brand text-center" href="#">
+              <i class="fab fa-facebook-messenger icons"></i>
+            </a>
+            <a class="navbar-brand text-center" href="#">
+              <i class="fas fa-briefcase icons"> </i>
+            </a>
+            <a class="navbar-brand text-center" href="#">
+              <i class="fas fa-user-circle icons"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------header end------- -->
+    <!-- ------WeedMap_wrraper start------- -->
+    <section class="WeedMap_wrraper">
+      <div class="container-fluid WeedMap"><canvas> </canvas></div>
+    </section>
+    <!-- ------WeedMap_wrraper end------- -->
+
+    <!-- ------Search_Wrraper------- -->
+    <section class="Search_Wrraper">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-center Search_Wrraper pt-2 pb-2"
+          >
+            <input
+              type="text"
+              placeholder="DELIVERY ADDRESS"
+              class="Delivery_Address"
+            />
+            <input type="text" class="Zip" placeholder="ZIP" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------Search_Wrraper end------- -->
+
+    <!-- --------TAGS START_____ -->
+    <div class="container-fluid">
+    <section class="tabs t-tabs mt-2">
+      <ul class="nav nav-tabs fancyTabs" id="myTab" role="tablist">
+        <li class="tab fancyTab ">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Store</a
+          >
+        </li>
+        <li class="tab fancyTab">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >Delivery</a
+          >
+        </li>
+        <li class="tab fancyTab">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#contact"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Deals</a
+          >
+        </li>
+        <li class="tab fancyTab">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#a"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Navigator</a
+          >
+        </li>
+        <li class="tab fancyTab">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#s"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Doctor</a
+          >
+        </li>
+        <li class="tab fancyTab">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#d"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Wiki Karma</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content " id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <div class="container-fluid mt-4">
+            <!-- -- -------- first title start ----- -->
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between pr-0">
+                <h1 class="text-uppercase best__offers">
+                  BEST <span class="offers">OFFERS</span>
+                </h1>
+                <div class="green_line d-flex align-items-end  mb-5"></div>
+              </div>
+            </div>
+            <!-- -- -------- first title end ----- -->
+            <!-- --------SHOP BEST OFFERS START_____ -->
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/first_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/second_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/third_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/fourth_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/first_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/second_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/third_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6">
+                <img
+                  class="ShopImage d-block mx-auto img-fluid"
+                  src="./img/fourth_shop.png"
+                  alt="shop"
+                />
+                <div>
+                  <div class="d-flex justify-content-around">
+                    <div>
+                      <span class="Shop_name d-block">SHOP NAME</span>
+                      <img class="img-fluid" src="./img/rate.png" alt="rate" />
+                    </div>
+                    <div class="checked__wrraper text-center pt-2">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- --------SHOP BEST OFFERS END -->
+            <!-- --------BLOG TV START -->
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between pr-0">
+                <h1 class="text-uppercase best__offers">
+                  BLOG <span class="offers">/TV</span>
+                </h1>
+                <div class="green_line d-flex align-items-end mb-5"></div>
+              </div>
+            </div>
+
+            <div class="row blog_wrraper justify-content-center pt-5">
+              <div class="col-xl-6 col-12 text-center pt-4">
+                <iframe
+                  class="frame_tv"
+                  src="https://www.youtube.com/embed/FUspv6ufkog?controls=0"
+                >
+                </iframe>
+                <div class="tv_downSide mx-auto"></div>
+              </div>
+              <div class="col-xl-6 col-12 mb-5">
+                  <div class="d-flex mb-3 ">
+                      <div class="d-flex">
+                        <img class="img-fluid statistic_guys" src='./img/two_guys.png' alt="" class="statistic_guys"/>
+                      </div>
+                      <div class="d-inline-block ml-5">
+                        <span class="d-block statistics_title">CLUB MEMBERS</span>
+                        <span class="d-block statistics_count">1 000 000</span>
+                        <span class="d-block statistics_text">readable content of a ...</span>
+                      </div>
+                    </div>
+                <div class="blog_line"></div>
+                <div class="d-flex mb-3 ">
+                    <div class="d-flex">
+                      <img class="img-fluid" src="./img/stoned_guy.png" alt="" class="stoned_guy"/>
+                    </div>
+                    <div class="d-inline-block ml-5">
+                      <span class="d-block statistics_title">stoned</span>
+                      <span class="d-block statistics_count">1 600</span>
+                      <span class="d-block statistics_text">readable content of a ...</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- --------BLOG TV END -->
+            <!-- --------ABOUT US START -->
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between pr-0">
+                  <h1 class="text-uppercase best__offers">
+                    ABOUT <span class="offers"> US</span>
+                  </h1>
+                  <div class="green_line d-flex align-items-end mb-5"></div>
+                </div>
+              </div>
+            <div class="row">
+                <div class="col-12">
+                  <span class="reazon_title d-block">Why do we use it?</span>
+                  <p class="reazon_text">
+                    It is a long established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. It is a long
+                    established fact that a <br />
+                    reader will be distracted by the readable content of a page when looking
+                    at its layout. It is a long established fact that a <br />
+                    reader will be distracted by the readable content of a page when looking
+                    at its layout. It is a long established fact that a reader will be
+                    distracted by the <br />
+                    readable content of a page when looking at its layout. It is a long
+                    established fact that a reader will be distracted by the readable
+                    content of a page when <br />
+                    looking at its layout. It is a long established fact that a reader will
+                    be distracted by the readable content of a page when looking at its
+                    layout.
+                  </p>
+                </div>
+                <div class="col-12 about_us__main d-flex justify-content-end mt-4 pb-3 text-center">
+                    <a href="#" class="d-flex align-items-end mr-2"><img src="./img/android_icon.png" alt=""></a>
+                    <a href="#" class="d-flex align-items-end mr-5"><img src="./img/app_store__icon.png" alt=""></a>
+                </div>
+              </div>
+              <!-- FOOTER Start  --> 
+              <footer class="row pt-4">
+                <div class="col-12 d-flex justify-content-between">
+                  <ul class="pl-5">
+                    <li class="text-uppercase ml-4"><a href="">About us</a></li>
+                    <li class="text-uppercase ml-4"><a href="">Careers</a></li>
+                    <li class="text-uppercase ml-4"><a href="">Advocacy</a></li>
+                    <li class="text-uppercase ml-4"><a href="">Contacts</a></li>
+                  </ul>
+                  <div class="green_line d-flex align-items-end mb-5 footer_line"></div>
+                </div>
+              </footer>
+              <!-- FOOTER End  --> 
+            <!-- --------ABOUT US END -->
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <!--  SHOPS  START-->
+          <div class="container-fluid mt-4 s">
+            <div class="row s">
+              <div class="col-3 s">
+                <div class="row">
+                  <div class="col-12">
+                    ssss
+                  </div>
+                </div>
+              </div>
+              <div class="col-9 s">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-between pr-0 pb-2">
+                      <h1 class="text-uppercase best__offers">
+                          ST<span class="offers">ORES</span>
+                      </h1>
+                      <div class="green_line d-flex align-items-end mb-5"></div>
+                  </div>
+                </div>
+                <div class="row  p-2 s">
+                  <div class="col-12 s">
+                    sdsds
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  SHOPS  END-->
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          3
+        </div>
+        <div
+          class="tab-pane fade"
+          id="a"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          4
+        </div>
+        <div
+          class="tab-pane fade"
+          id="s"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          5
+        </div>
+        <div
+          class="tab-pane fade"
+          id="d"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          6
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- ---Tags end-------- -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
